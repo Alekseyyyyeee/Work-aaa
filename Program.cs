@@ -14,6 +14,9 @@ namespace Control
             int n;
             Console.WriteLine("Укажите сторки с каким количеством символов необходимо вывести на экран.");
             int.TryParse(Console.ReadLine(), out n );
+                if (n <=0)
+                Console.WriteLine("Введите целочисленное значение. Невозможно вывести отрицательное или дробное количество символов.");
+                
             Console.WriteLine("Введите строки; оставьте строку пустой для завершения ввода. ");
             count = 0;
             Massive = new string[count];
