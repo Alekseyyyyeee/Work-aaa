@@ -11,6 +11,9 @@ namespace Control
             string[] Massive2;
             int count;
             string message;
+            int n;
+            Console.WriteLine("Укажите сторки с каким количеством символов необходимо вывести на экран.");
+            int.TryParse(Console.ReadLine(), out n );
             Console.WriteLine("Введите строки; оставьте строку пустой для завершения ввода. ");
             count = 0;
             Massive = new string[count];
@@ -29,11 +32,20 @@ namespace Control
                 }
             }
             while (message != "");
-            for (int i = 0; i < Massive.Length; i++)
-                Console.WriteLine(Massive[i]);
+
             
+            
+            
+            for (int i = 0; i < Massive.Length; i++)
+            {
+                if (Massive.Length <= n)
+                    Console.WriteLine(Massive[i]);
+            }
             
         }
     }
 
 }
+
+
+
