@@ -32,13 +32,14 @@ namespace Control
                 }
             }
             while (message != "");
+            
 
             
             
             
             for (int i = 0; i < Massive.Length; i++)
             {
-                if (Massive.Length <= n)
+                if (Massive[i].Length <= n)
                     Console.WriteLine(Massive[i]);
             }
             
